@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     # Base Packages
     zsh
+    zsh-powerlevel10k
     git
     gh
     wget
