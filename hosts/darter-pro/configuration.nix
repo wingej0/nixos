@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_6_11;
 
   networking.hostName = "darter-pro"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -63,15 +63,16 @@
   # services.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.wingej0 = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      tree
-    ];
-  };
+  # users.users.wingej0 = {
+  #   isNormalUser = true;
+  #   extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+  #   packages = with pkgs; [
+  #     tree
+  #   ];
+  # };
 
   nixpkgs.config.allowUnfree = true;
+  services.flatpak.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -4,9 +4,5 @@
     obsidian
     onlyoffice-bin
     libreoffice
-    planify
-    kdePackages.kmail
-    kdePackages.kmail-account-wizard
-    # mailspring
   ];
 }

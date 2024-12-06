@@ -7,7 +7,7 @@
                 ./darter-pro/configuration.nix
 
                 # Drivers
-                # ./modules/system76.nix
+                ./modules/system76.nix
 
                 # Programs
                 ./modules/base.nix
@@ -20,6 +20,9 @@
                 # ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
+
+                # User and home-manager
+                ./modules/users.nix
             ]
         else
             [ ];
