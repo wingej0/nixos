@@ -17,7 +17,7 @@
                 ./modules/fonts.nix
                 ./modules/games.nix
                 ./modules/media.nix
-                # ./modules/nordvpn.nix
+                ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
 

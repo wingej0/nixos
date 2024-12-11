@@ -3,7 +3,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     
     # Nix User Repository
-    nur.url = "github:nix-community/NUR";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Home Manager
     home-manager = {

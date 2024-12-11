@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     telegram-desktop
-    caprine-bin
+    # caprine-bin
     discord
     zoom-us
   ];

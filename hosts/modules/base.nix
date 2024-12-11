@@ -25,5 +25,7 @@
     btop
     kitty
     lshw
+
+    kdePackages.qtstyleplugin-kvantum
   ];
 }
