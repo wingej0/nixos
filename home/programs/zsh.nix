@@ -5,6 +5,7 @@
         enable = true;
         initExtra = ''
             source ~/.p10k.zsh
+            cat ~/.cache/wallust/sequences
             bindkey -e
             fastfetch
         '';

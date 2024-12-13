@@ -12,6 +12,12 @@
                 # Network settings
                 ./darter-pro/networking.nix
 
+                # Desktops (Plasma is the default)
+                # For Cosmic or Qtile, select at boot
+                ./specialisations/cosmic.nix
+                ./specialisations/plasma.nix
+                ./specialisations/qtile.nix
+
                 # Programs
                 ./modules/base.nix
                 ./modules/browsers.nix

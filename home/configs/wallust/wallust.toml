@@ -1,0 +1,9 @@
+
+[templates]
+# template: A relative path that points to a file where wallust.toml is located, usually at `~/.config/wallust/`
+# target: Absolute path in which to place a file with generated templated values
+# NOTE: prefer '' over "" for paths, avoids escaping.
+#zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
+qtile = { template = 'colors-qtile.json', target = '~/.cache/qtile/colors.json' } 
+rofi = { template = 'colors-rofi-pywal.rasi', target = '~/.cache/rofi/colors-rofi-pywal.rasi' }
+wlogout = { template = 'colors-wlogout.css', target = '~/.cache/wlogout/colors-wlogout.css' }
