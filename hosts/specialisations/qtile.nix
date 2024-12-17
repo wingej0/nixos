@@ -3,8 +3,9 @@
     imports = [
         # These imports provide the latest git commit of Qtile.
         # If they are commented out, the release version will be installed.
-        (_: { nixpkgs.overlays = [ inputs.qtile-flake.overlays.default ]; })
-        ./../overlays/qtile-extras-overlay.nix
+        # (_: { nixpkgs.overlays = [ inputs.qtile-flake.overlays.default ]; })
+        # ./../overlays/qtile-extras-overlay.nix
+        ./../../home/system/gtk.nix
     ];
 
     specialisation = {
@@ -36,6 +37,10 @@
                 xdg-desktop-portal-wlr
                 xdg-desktop-portal-gtk
 
+                # Theme stuff
+                tela-circle-icon-theme
+                bibata-cursors
+
                 # File Manager
                 xfce.thunar
 
@@ -50,7 +55,8 @@
                 cliphist
                 swayidle
                 swaylock-effects
-                polkit_gnome
+                kdePackages.polkit-kde-agent-1
+                kdePackages.kwallet
                 wlogout
                 ffmpeg
                 wlr-randr
@@ -86,7 +92,10 @@
 
             # Enable pam for swaylock, so it will actually unlock
             security.pam.services.swaylock = {};
-            services.gnome.gnome-keyring.enable = true;
+            security.pam.services.wingej0.kwallet = {
+                enable = true;
+                package = pkgs.kdePackages.kwallet;
+            };
 
             environment.sessionVariables = {
                 NIXOS_OZONE_WL = "1";
