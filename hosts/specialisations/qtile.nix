@@ -13,16 +13,24 @@
         qtile-desktop.configuration = {
             # Enable the X11 windowing system.
             services.xserver.enable = true;
-            
-            # Enable Qtile
+
             services.displayManager.sddm.enable = true;
             services.xserver.windowManager.qtile = {
-                package = inputs.qtile-flake.overlays.default;
                 enable = true;
                 extraPackages = python3Packages: with python3Packages; [
                     qtile-extras
                 ];
             };
+            
+            # Enable Qtile
+            # services.displayManager.sddm.enable = true;
+            # services.xserver.windowManager.qtile = {
+            #     package = inputs.qtile-flake.overlays.default;
+            #     enable = true;
+            #     extraPackages = python3Packages: with python3Packages; [
+            #         qtile-extras
+            #     ];
+            # };
 
             hardware.bluetooth.enable = true;
             services.udisks2.enable = true;
@@ -78,6 +86,7 @@
 
             programs.xwayland.enable = true;
             programs.dconf.enable = true;
+            services.libinput.enable = true;
 
             xdg.portal = {
                 enable = true;

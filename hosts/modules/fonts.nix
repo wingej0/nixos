@@ -11,7 +11,7 @@
         noto-fonts-cjk-sans
         noto-fonts-color-emoji
         dejavu_fonts
-        nerd-fonts.fira-code
+        fira-code-nerdfont
         font-awesome
         corefonts
         vistafonts
