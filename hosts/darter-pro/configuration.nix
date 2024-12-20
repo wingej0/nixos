@@ -53,7 +53,7 @@
     openFirewall = true;
   };
 
-  # Enable sound.
+  # Enable sound
   services.pipewire = {
     enable = true;
     pulse.enable = true;

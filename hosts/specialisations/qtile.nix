@@ -48,6 +48,7 @@
                 # Theme stuff
                 tela-circle-icon-theme
                 bibata-cursors
+                orchis-theme
 
                 # File Manager
                 xfce.thunar
@@ -108,6 +109,7 @@
 
             environment.sessionVariables = {
                 NIXOS_OZONE_WL = "1";
+                QT_QPA_PLATFORMTHEME = "qt5ct";
             };
         };
     };

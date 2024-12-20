@@ -25,7 +25,11 @@
                 cosmic-ext-applet-clipboard-manager
             ];
 
-            # programs.dconf.enable = true;
+            programs.dconf.enable = true;
+            security.pam.services.wingej0.kwallet = {
+                enable = true;
+                package = pkgs.kdePackages.kwallet;
+            };
             # services.gnome.evolution-data-server.enable = true;
             # services.gnome.gnome-online-accounts.enable = true;
             # services.gnome.gnome-keyring.enable = true;
