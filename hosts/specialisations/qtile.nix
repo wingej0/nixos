@@ -64,8 +64,7 @@
                 cliphist
                 swayidle
                 swaylock-effects
-                kdePackages.polkit-kde-agent-1
-                kdePackages.kwallet
+                polkit_gnome
                 wlogout
                 ffmpeg
                 wlr-randr
@@ -102,10 +101,7 @@
 
             # Enable pam for swaylock, so it will actually unlock
             security.pam.services.swaylock = {};
-            security.pam.services.wingej0.kwallet = {
-                enable = true;
-                package = pkgs.kdePackages.kwallet;
-            };
+            services.gnome.gnome-keyring.enable = true;
 
             environment.sessionVariables = {
                 NIXOS_OZONE_WL = "1";

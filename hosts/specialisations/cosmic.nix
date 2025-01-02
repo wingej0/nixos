@@ -26,13 +26,7 @@
             ];
 
             programs.dconf.enable = true;
-            security.pam.services.wingej0.kwallet = {
-                enable = true;
-                package = pkgs.kdePackages.kwallet;
-            };
-            # services.gnome.evolution-data-server.enable = true;
-            # services.gnome.gnome-online-accounts.enable = true;
-            # services.gnome.gnome-keyring.enable = true;
+            services.gnome.gnome-keyring.enable = true;
 
             environment.sessionVariables = {
                 COSMIC_DATA_CONTROL_ENABLED = "1"; 

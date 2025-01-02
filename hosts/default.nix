@@ -30,6 +30,7 @@
                 ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
+                # ./modules/snapd.nix
                 ./modules/virtualization.nix
 
                 # User and home-manager
