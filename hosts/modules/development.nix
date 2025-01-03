@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     vscode
-    jetbrains.pycharm-community
+    # jetbrains.pycharm-community
     mongodb-compass
     insomnia
     unixODBC

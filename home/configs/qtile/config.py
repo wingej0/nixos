@@ -39,7 +39,7 @@ wl_input_rules = {
 }
 
 # Cursor theme
-wl_xcursor_theme = "Adwaita"
+wl_xcursor_theme = "Bibata-Modern-Classic"
 wl_xcursor_size = 24
 
 # Name of the window manager

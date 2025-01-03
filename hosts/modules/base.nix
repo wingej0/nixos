@@ -25,7 +25,15 @@
     btop
     kitty
     lshw
+    seahorse
+    gnome-keyring
+    file-roller
 
     kdePackages.qtstyleplugin-kvantum
   ];
+
+  programs.seahorse.enable = true;
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.wingej0.enableGnomeKeyring = true;
+  programs.ssh.askPassword = "${pkgs.seahorse}/libexec/seahorse/ssh-askpass";
 }

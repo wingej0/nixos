@@ -19,13 +19,13 @@
         
             gtk3 = {
                 extraConfig = {
-                    gtk-application-prefer-dark-theme = 1;
+                    gtk-application-prefer-dark-theme = 0;
                 };
             };
 
             gtk4 = {
                 extraConfig = {
-                    gtk-application-prefer-dark-theme = 1;
+                    gtk-application-prefer-dark-theme = 0;
                 };
             };
 
@@ -40,13 +40,13 @@
             };
 
             iconTheme = {
-                name = "Tela circle dark";
-                package = pkgs.tela-circle-icon-theme;
+                name = "Tela-dark";
+                package = pkgs.tela-icon-theme;
             };
 
             cursorTheme = {
-                name = "Adwaita";
-                # package = pkgs.bibata-cursors;
+                name = "Bibata-Modern-Classic";
+                package = pkgs.bibata-cursors;
                 size = 24;
             };
         };

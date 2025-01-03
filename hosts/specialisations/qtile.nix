@@ -51,7 +51,7 @@
                 orchis-theme
 
                 # File Manager
-                xfce.thunar
+                nautilus
 
                 # Wayland Programs
                 rofi-wayland
@@ -101,7 +101,6 @@
 
             # Enable pam for swaylock, so it will actually unlock
             security.pam.services.swaylock = {};
-            services.gnome.gnome-keyring.enable = true;
 
             environment.sessionVariables = {
                 NIXOS_OZONE_WL = "1";

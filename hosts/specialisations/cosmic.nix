@@ -26,7 +26,6 @@
             ];
 
             programs.dconf.enable = true;
-            services.gnome.gnome-keyring.enable = true;
 
             environment.sessionVariables = {
                 COSMIC_DATA_CONTROL_ENABLED = "1"; 
