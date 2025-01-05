@@ -5,5 +5,6 @@
     onlyoffice-bin
     libreoffice
     mailspring
+    evince
   ];
 }

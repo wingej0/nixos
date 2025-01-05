@@ -29,6 +29,8 @@
     gnome-keyring
     file-roller
 
+    tela-circle-icon-theme
+
     kdePackages.qtstyleplugin-kvantum
   ];
 
