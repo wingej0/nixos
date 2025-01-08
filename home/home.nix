@@ -3,7 +3,6 @@
     imports = [
         # Program Configs
         ./programs/fastfetch.nix
-        ./programs/kdeconnect.nix
         ./programs/kitty.nix
         ./programs/zsh.nix
     ];
