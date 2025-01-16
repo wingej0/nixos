@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_6_11;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];  

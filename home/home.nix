@@ -5,6 +5,7 @@
         ./programs/fastfetch.nix
         ./programs/kitty.nix
         ./programs/zsh.nix
+        ./system/gtk.nix
     ];
 
     home.file = {

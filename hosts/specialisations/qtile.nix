@@ -5,7 +5,7 @@
         # If they are commented out, the release version will be installed.
         # (_: { nixpkgs.overlays = [ inputs.qtile-flake.overlays.default ]; })
         # ./../overlays/qtile-extras-overlay.nix
-        ./../../home/system/gtk.nix
+        # ./../../home/system/gtk.nix
     ];
 
     specialisation = {

@@ -17,9 +17,6 @@
             services.desktopManager.cosmic.enable = true;
 
             environment.systemPackages = with pkgs; [
-                # Gnome stuff
-                # gnome-online-accounts
-                # gnome-calendar
 
                 # Clipboard manager
                 cosmic-ext-applet-clipboard-manager

@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
-{
-  programs.kdeconnect.enable = true;
-  
+{ 
   environment.systemPackages = with pkgs; [
     obs-studio
     kdePackages.kdenlive
@@ -11,8 +9,10 @@
     imagemagick
     libheif # For converting .heic images
     yt-dlp
-    cider
     annotator
+    # cider
     ffmpeg
+    loupe
+    shotwell
   ];
 }

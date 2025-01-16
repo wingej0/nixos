@@ -9,8 +9,6 @@
     checkReversePath = false;
     allowedTCPPorts = [ 443 ];
     allowedUDPPorts = [ 1194 ];
-    allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
-    allowedUDPPortRanges = [ { from = 1714; to = 1764; } ];
   };
 
   # Or disable the firewall altogether.
