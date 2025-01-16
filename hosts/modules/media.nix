@@ -10,7 +10,6 @@
     libheif # For converting .heic images
     yt-dlp
     annotator
-    # cider
     ffmpeg
     loupe
     shotwell

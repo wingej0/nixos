@@ -4,7 +4,6 @@
     obsidian
     onlyoffice-bin
     libreoffice
-    # mailspring
     evince
     anytype
   ];

@@ -16,7 +16,6 @@
                 # For Cosmic or Qtile, select at boot
                 ./specialisations/cosmic.nix
                 ./specialisations/gnome.nix
-                # ./specialisations/plasma.nix
                 ./specialisations/qtile.nix
 
                 # Programs
@@ -31,7 +30,7 @@
                 ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
-                ./modules/snapd.nix
+                # ./modules/snapd.nix
                 ./modules/virtualization.nix
 
                 # User and home-manager
