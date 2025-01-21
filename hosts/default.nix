@@ -12,7 +12,7 @@
                 # Network settings
                 ./darter-pro/networking.nix
 
-                # Desktops (Plasma is the default)
+                # Desktops (Gnome is the default)
                 # For Cosmic or Qtile, select at boot
                 ./specialisations/cosmic.nix
                 ./specialisations/gnome.nix
@@ -27,7 +27,8 @@
                 ./modules/games.nix
                 ./modules/input-remapper.nix
                 ./modules/media.nix
-                ./modules/nordvpn.nix
+                ./modules/mongodb.nix
+                # ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
                 # ./modules/snapd.nix
