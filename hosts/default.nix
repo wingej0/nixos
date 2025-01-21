@@ -63,7 +63,7 @@
 
                 # User and home-manager
                 ./modules/users.nix
-            ];
+            ]
         else
             [ ];
 }
