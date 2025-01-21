@@ -28,15 +28,42 @@
                 ./modules/input-remapper.nix
                 ./modules/media.nix
                 ./modules/mongodb.nix
-                # ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
-                # ./modules/snapd.nix
                 ./modules/virtualization.nix
 
                 # User and home-manager
                 ./modules/users.nix
             ]
+        else if hostname == "dis-winget" then 
+            [
+                # Configuration
+                ./dis-winget/configuration.nix
+
+                # Drivers
+                ./modules/nvidia.nix
+
+                # Networking
+                ./dis-winget/networking.nix
+
+                # Cron
+                ./dis-winget/cron.nix
+
+                # Desktop
+                ./specialisations/gnome.nix
+
+                # Programs
+                ./modules/base.nix
+                ./modules/browsers.nix
+                ./modules/development.nix
+                ./modules/fonts.nix
+                ./modules/mongodb.nix
+                ./modules/shells.nix
+                ./modules/python.nix
+
+                # User and home-manager
+                ./modules/users.nix
+            ];
         else
             [ ];
 }
