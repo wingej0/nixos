@@ -28,6 +28,7 @@
                 ./modules/input-remapper.nix
                 ./modules/media.nix
                 ./modules/mongodb.nix
+                ./modules/nordvpn.nix
                 ./modules/office.nix
                 ./modules/shells.nix
                 ./modules/virtualization.nix
