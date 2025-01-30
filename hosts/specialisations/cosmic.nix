@@ -10,25 +10,24 @@
         inputs.nixos-cosmic.nixosModules.default
     ];
 
-    specialisation = {
-        cosmic-desktop.configuration = {
+    config = lib.mkIf (config.specialisation != {}) {
 
-            services.displayManager.cosmic-greeter.enable = true;
-            services.desktopManager.cosmic.enable = true;
+        services.displayManager.cosmic-greeter.enable = true;
+        services.desktopManager.cosmic.enable = true;
 
-            environment.systemPackages = with pkgs; [
+        environment.systemPackages = with pkgs; [
 
-                # Clipboard manager
-                cosmic-ext-applet-clipboard-manager
-            ];
+            # Clipboard manager
+            cosmic-ext-applet-clipboard-manager
+        ];
 
-            programs.dconf.enable = true;
+        programs.dconf.enable = true;
 
-            environment.sessionVariables = {
-                COSMIC_DATA_CONTROL_ENABLED = "1"; 
-            };
-
-            services.flatpak.enable = true;
+        environment.sessionVariables = {
+            COSMIC_DATA_CONTROL_ENABLED = "1"; 
         };
+
+        services.flatpak.enable = true;
     };
+
 }

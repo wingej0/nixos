@@ -178,7 +178,7 @@ keys.extend([
         desc="Application launcher"),
     Key([mod], "b", lazy.spawn("firefox"),
         desc="Launch web browser"),
-    Key([mod], "m", lazy.spawn("flatpak run com.getmailspring.Mailspring --password-store=gnome-libsecret %U"),
+    Key([mod], "m", lazy.spawn("mailspring --password-store=gnome-libsecret %U"),
         desc="Launch email client"),
     Key([mod], "c", lazy.spawn("gnome-calendar"),
         desc="Launch Calendar"),

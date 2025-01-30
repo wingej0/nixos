@@ -9,6 +9,7 @@
     unixODBCDrivers.msodbcsql18
     gImageReader
     gnome-text-editor
+    ventoy-full
   ];
 
   environment.unixODBCDrivers = with pkgs.unixODBCDrivers; [ msodbcsql18 ];

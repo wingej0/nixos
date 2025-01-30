@@ -43,6 +43,8 @@
     variant = "";
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -61,8 +63,6 @@
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-
-  nixpkgs.config.allowUnfree = true;
 
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.

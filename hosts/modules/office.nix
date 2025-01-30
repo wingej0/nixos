@@ -6,5 +6,6 @@
     libreoffice
     evince
     anytype
+    mailspring
   ];
 }

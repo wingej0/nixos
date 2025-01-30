@@ -14,25 +14,25 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/c7fe406e-99dc-48ec-9d1d-6327b37e56e7";
+    { device = "/dev/disk/by-uuid/e5c8fb4d-2a12-458d-bd4e-2af490c02eb3";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/c7fe406e-99dc-48ec-9d1d-6327b37e56e7";
+    { device = "/dev/disk/by-uuid/e5c8fb4d-2a12-458d-bd4e-2af490c02eb3";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/c7fe406e-99dc-48ec-9d1d-6327b37e56e7";
+    { device = "/dev/disk/by-uuid/e5c8fb4d-2a12-458d-bd4e-2af490c02eb3";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/12CE-A600";
+    { device = "/dev/disk/by-uuid/06B7-12D9";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
@@ -50,7 +50,7 @@
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/ebddf3a0-7ec1-4709-894c-c7b2c40e3703"; }
+    [ { device = "/dev/disk/by-uuid/09844a6b-cd75-4e63-85f8-d3dd9e45ff23"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -58,7 +58,7 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp37s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp13s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp0s20f3.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
