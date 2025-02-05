@@ -16,6 +16,7 @@
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelModules = ["ecryptfs"];
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];  

@@ -15,7 +15,6 @@
     fastfetch
     wallust
     variety
-    veracrypt
     remmina
     popsicle
     gparted
@@ -28,6 +27,7 @@
     seahorse
     gnome-keyring
     file-roller
+    ecryptfs
 
     tela-circle-icon-theme
 
